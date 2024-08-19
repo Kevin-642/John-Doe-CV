@@ -1,0 +1,139 @@
+@font-face {
+  font-family: 'NunitoSans';
+  src:url(/public/fonts/NunitoSans-Medium.woff2), url(/public/fonts/NunitoSans-Medium.ttf);
+}
+
+*{
+  font-family: 'NunitoSans';
+  font-size:medium;
+}
+h1, h2, h3, h4, h5, h6{
+  color: #1e1e1e;
+}
+strong{
+  color: black;
+}
+.HomePage, .ServicePage, .PortfolioPage, .BlogPage, .ContactPage, .LegalNoticePage, .Footer{
+  color: #444;
+}
+.TopOfPage:hover{
+  background-color: #298eff;
+}
+
+/*Header*/
+.NavBar{
+  background-color: #444;
+  position: relative;
+}
+.navbar-brand{
+  margin-right: auto;
+}
+.navbar-toggler {
+  margin-left: auto;
+}
+.collapse navbar-collapse {
+  text-align: left;
+}
+@media (min-width: 992px) {
+  .NavBar .navbar-nav {
+      margin-left: 800px;
+  }
+}
+
+/*Home*/
+.BgImage{
+  background-image: url('/public/img/hero-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height:800px;
+}
+.Opacity{
+  background-color: rgba(0, 0, 0, 0.3);
+  height:800px;
+}
+.TitleHome{
+  padding-top: 250px;
+}
+.TitleHome h1{
+  font-size: 4rem;
+  color: white;
+}
+.TitleHome h2{
+  font-size: 2rem;
+  color: white;
+}
+.About{
+  display: flex;
+}
+.AboutShadow{
+  width: 80%;
+  margin: auto;
+  box-shadow: 0px 4px 7px 0px #C6C6C6;
+}
+
+/*Service*/
+.CardService{
+  border: 0;
+  border-radius: 4%;
+  box-shadow: 0px 1px 3px 0px #C6C6C6 ;
+}
+.Icon{
+  color: #0D6EFD;
+  font-size: 3rem;
+}
+.CardService:hover .Icon{
+  color: #cde1f8;
+}
+
+/*Contact*/
+.MainContact{
+  background-image: url('/public/img/contact-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.Blue{
+  background-color: rgba(0, 105, 255, 0.5);
+}
+.MapResponsive{
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+}
+.MapResponsive iframe{
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+/*Footer*/
+.Footer{
+  background-color: #EEEEEE;
+}
+.LinkIcon{
+  color: white;
+}
+.LinkIcon :hover{
+  opacity: 0.8;
+}
+.LinkIcon .Icon{
+  color: #444;
+  font-size: 2rem;
+}
+.Link{
+  color:#444 ;
+}
+.Link:hover{
+  color: white;
+  opacity: 0.8;
+}
+@media (min-width: 768px) {
+  .row-cols-md-3>* {
+      flex: 0 0 auto;
+      width: 25%;
+  }
+}
